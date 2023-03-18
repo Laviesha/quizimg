@@ -1,0 +1,24 @@
+
+html
+  head
+   
+    title Quizzzing
+    block style 
+    style
+        include ../static/style4.css
+       
+  body
+    block content
+      div.container
+            h1 Create here
+            form(action="/register", method="post" class="myform")
+              h4 Enter Qusetion :
+              textarea(class="label1" rows="4" required)
+              h4 Enter Correct answer(type yes/no)
+              input(type="text" , class="myInput" required)
+              h4 Points :
+              input(type="number", class="input2" required)
+              button(class="btn")
+                | Submit 
+              button(class="btn")
+                | Add Question

@@ -1,0 +1,33 @@
+
+html
+  head
+   
+    title Quizzzing
+    block style 
+    style
+        include ../static/style4.css
+       
+  body
+    block content
+      div.container
+        h1(class="header1") Quizzzin   
+        h2(class="header2") Create here(MCQ)
+        form(action="/register", method="post" class="myform")
+          h4 Enter Qusetion :
+                textarea(class="label1" rows="4" required)
+          h4 Option 1:
+                input(type="text" , class="myInput" required placeholder="required")
+          h4 Option 2:                
+                input(type="text" , class="myInput" required placeholder="required")
+          h4 Option 3:                
+                input(type="text" , class="myInput" placeholder="optional")
+          h4 Option 4:
+                input(type="text" , class="myInput" placeholder="optional")
+          h4 Enter Correct answer
+                input(type="text", class="input1")      
+          h4 Points :
+                input(type="number", class="input2" required)          
+                button(class="btn")
+                    | Submit
+                button(class="btn")
+                    | Add Question

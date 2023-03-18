@@ -1,0 +1,30 @@
+html
+ head
+    title home
+    block style
+    style
+       include ../static/style1.css
+
+ body
+   
+    nav#nav
+        img.logo(src='/static/p6.jpeg')
+        a(href='#')
+        img.pro(src='/static/p9.png')
+    block content
+    .sign
+        ul
+         li #[a(href='/login') Login]
+    .sign1 
+        ul 
+           
+         li #[a(href='/register') Register]
+        
+    .contents
+        p Lets Check! How Much do you know about superheros?
+    .row
+        h4
+        a(href='http://localhost:4000/f1') Create Quiz
+    .row1
+        h4
+        a(href='#') Join Quiz
